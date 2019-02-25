@@ -39,6 +39,7 @@ public class BasicAnnotation {
         System.out.println("AfterSuite测试套件");
     }
 */
+
     @Test
    public void testCase1(){
        System.out.println("test这是测试用例1");
