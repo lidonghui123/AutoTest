@@ -1,0 +1,21 @@
+[
+  {
+    "description": "重定向到自己网页上",
+    "request": {
+      "uri": "/redirect/topath"
+    },
+    "redirectTo": "/redirect/new"
+  },
+  {
+    "description": "这是被重定向的请求",
+    "request": {
+      "uri": "/redirect/new"
+    },
+    "response": {
+      "text": "这是重定向的网页",
+      "headers": {
+        "Content-Type": "text/html:charset=gbk"
+      }
+    }
+  }
+]
