@@ -5,10 +5,11 @@
         <classes>
             <class name="com.tester.extend.demo.TestMethodDemo">
                 <methods>
-                    <include name="test1"/>
+                    <!--<include name="test1"/>-->
                     <include name="test2"/>
                     <include name="test3"/>
-                    <include name="test4"/>
+                    <include name="test5"/>
+                    <!--<include name="test4"/>-->
                     <!--<include name="logDemo"/>-->
                 </methods>
             </class>
