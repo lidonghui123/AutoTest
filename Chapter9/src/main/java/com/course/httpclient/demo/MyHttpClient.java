@@ -1,4 +1,4 @@
-package com.course.httpclient;
+package com.course.httpclient.demo;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
