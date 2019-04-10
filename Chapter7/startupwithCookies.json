@@ -1,16 +1,18 @@
 [
   {
-    "description": "这是一个带有cookies的mock请求",
+    "description": "这是一个会返回cookies信息的get请求",
     "request": {
       "uri": "/getCookies",
       "method": "get"
     },
     "response": {
       "cookies": {
-        "login": "true",
-        "status": "10000"
+        "login": "true"
       },
-      "text": "恭喜你获得cookies信息"
+      "text": "恭喜你获得cookies信息成功",
+      "headers": {
+        "Content-Type": "text/html:charset=gbk"
+      }
     }
   },
   {
@@ -23,14 +25,14 @@
       }
     },
     "response": {
-      "text": "这是一个需要携带cookies信息访问的请求",
+      "text": "这是一个需要携带cookies信息才能访问的get请求",
       "headers": {
         "Content-Type": "text/html:charset=gbk"
       }
     }
   },
   {
-    "description": "这是待cookies信息的post请求",
+    "description": "这是一个带cookies信息的post请求",
     "request": {
       "uri": "/post/with/cookies",
       "method": "post",
@@ -45,9 +47,12 @@
     "response": {
       "status": 200,
       "json": {
-        "huuhansan": "success",
+        "huhansan": "success",
         "status": "1",
-        "text": "可以啦"
+        "text": "返回数据成功"
+      },
+      "headers": {
+        "Content-Type": "text/html:charset=gbk"
       }
     }
   }
